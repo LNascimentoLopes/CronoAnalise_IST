@@ -1,0 +1,76 @@
+.titleAccount{
+    font-size: 18;
+    font-family:monospace;
+    font-weight: 1;
+    text-align: center;
+    width: 8%;
+    margin-left: 1%;
+    border-left: 1px solid white;
+}
+body{
+    background: linear-gradient(235deg, #717171, #181818, #1e1e1e, #000000);
+}
+.registerAll{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerBox{
+    background-color: white;
+    border:none;
+    border-radius:32px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    justify-content: center;
+    height: 600px;
+    width: 500px;
+}
+.registerBox2{
+    margin: 25px 35px 25px 35px;
+    height: 580px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    scale: 0.95;
+}
+.paragrafos{
+    color: #717171;
+    margin: 0;
+    font-weight: 1;
+}
+.titleRegister{
+    margin: 10px 0px 10px 0px;
+    font-weight: 1;
+
+}
+.tituloSecundario{
+    margin-bottom: 0;
+}
+.Entradas{
+    height: 55px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 16px;
+    padding-left: 15px;
+}
+.EntrarRgs{
+    text-decoration: none;
+    color: #717171;
+}
+.btnRegistrar{
+    background-color: red;
+    margin: 40px 0px 10px 0px;
+    border: none;
+    border-radius: 16px;
+    height: 55px;
+    font-size: 18;
+    color: white;
+    box-shadow:2px 3px 0  #00000030;
+}
+.btnRegistrar:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

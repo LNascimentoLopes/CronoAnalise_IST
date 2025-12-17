@@ -1,0 +1,80 @@
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+    rel="stylesheet"
+  />
+
+  <head>
+    <title>Chrono analise</title>
+    <link rel="stylesheet" href="Css/Chronometro.css" />
+    <link rel="icon" href="./Imagens/relogio.png" />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <body>
+    <header>
+      <div class="Cabecalho">
+        <img class="menu_logo" src="Imagens/senai.png" alt="" />
+        <div class="accountButtons">
+          <a href="Register.html"><button class="btnRegister hover">Registrar</button></a>
+          <div id="userBox"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="Total">
+        <div class="Principal">
+          <div class="Cronometro" id="display">00:00.00</div>
+          <div id="laps"></div>
+          <div class="botões">
+            <button class="Start geral" id="start"></button>
+            <button class="Stop geral" id="stop"></button>
+            <button class="LapBtn geral" id="lap"></button>
+            <button class="reset geral" id="reset"></button>
+          </div>
+        </div>
+        <div class="Secundario"></div>
+      </section>
+      <div class="MedMinMax">
+        <div class="valueGroup">
+          <div class="Media">Média</div>
+          <div class="Resultado" id="media">--</div>
+        </div>
+        <div class="valueGroup">
+          <div class="Minimo">Menor Tempo</div>
+          <div class="Resultado" id="menor">--</div>
+        </div>
+        <div class="valueGroup">
+          <div class="Maximo">Maior Tempo</div>
+          <div class="Resultado" id="maior">--</div>
+        </div>
+        <div class="valueGroup">
+          <div class="QntdPecas">Total de peças</div>
+          <div class="Totalpeca" id="Total">0</div>
+        </div>
+      </div>
+
+      <section class="DivGrafico">
+        <div class="Grafico">
+          <canvas
+            class="graficoTempos"
+            id="graficoTempos"
+            width="800px"
+            height="400px"
+          ></canvas>
+
+          <div class="ExportarBtn">
+            <button class="Exportar" id="exportarCSV">Exportar CSV</button>
+            <button class="Exportar" id="exportarExcel">Exportar Excel</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="Cronometro.js"></script>
+  <script src="profile.js"></script>
+  <script src="profilehide.js"></script>
+  
+</html>

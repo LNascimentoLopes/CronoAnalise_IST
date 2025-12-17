@@ -1,0 +1,57 @@
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <title>Chrono analise</title>
+    <link rel="stylesheet" href="Css/Chronometro.css" />
+    <link rel="stylesheet" href="Css/Login.css" />
+    <link rel="icon" href="./Imagens/relogio.png" />
+  </head>
+  <header>
+    <div class="Cabecalho">
+      <img class="menu_logo" src="Imagens/senai.png" alt="" />
+
+      <h1 class="titleAccount">CHRONO ANALISYS</h1>
+    </div>
+  </header>
+  <body>
+    <div class="loginAll">
+      <div class="loginBox">
+        <div class="loginBox2">
+          <h2 class="titleLogin">Login</h2>
+          <p class="paragrafos">Entre para utilizar nossos serviços.</p>
+          <h3 class="tituloSecundario">Usuário</h3>
+          <input
+          id="usuarioLogin"
+            class="Entradas"
+            type="text"
+            placeholder="Insira seu usuário aqui"
+            required
+          />
+          <h3 class="tituloSecundario">Senha</h3>
+          <input
+          id="senhaLogin"
+            class="Entradas"
+            type="password"
+            placeholder="Insira sua senha aqui"
+            required
+          />
+          <button class="btnEntrar" onclick="login()">Entrar</button>
+          <a class="registrarLgn" href="Register.html">Registrar-se</a>
+        </div>
+      </div>
+    </div>
+    <script src="Login.js"></script>
+  </body>
+  
+</html>

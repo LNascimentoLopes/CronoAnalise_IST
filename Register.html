@@ -1,0 +1,73 @@
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <title>Chrono analise</title>
+    <link rel="stylesheet" href="Css/Chronometro.css" />
+    <link rel="stylesheet" href="Css/Login.css" />
+    <link rel="stylesheet" href="Css/Register.css" />
+    <link rel="icon" href="./Imagens/relogio.png" />
+  </head>
+  <header>
+    <div class="Cabecalho">
+      <img class="menu_logo" src="Imagens/senai.png" alt="" />
+
+      <h1 class="titleAccount">CHRONO ANALISYS</h1>
+    </div>
+  </header>
+  <body>
+    <div class="registerAll">
+      <div class="registerBox">
+        <div class="registerBox2">
+          <h2 class="titleRegister">Registrar</h2>
+          <p class="paragrafos">Registre-se para utilizar nossos serviços.</p>
+          <h3 class="tituloSecundario">Usuário</h3>
+          <input
+            id="usuario"
+            class="Entradas"
+            type="text"
+            placeholder="Insira seu usuário aqui"
+            required
+          />
+          <h3 class="tituloSecundario">Email</h3>
+          <input
+            id="email"
+            class="Entradas"
+            type="email"
+            placeholder="Insira seu Email aqui"
+            required
+          />
+          <h3 class="tituloSecundario">Senha</h3>
+          <input
+            id="senha"
+            class="Entradas"
+            type="password"
+            placeholder="Insira sua senha aqui"
+            required
+          />
+          <h3 class="tituloSecundario">Confirme a senha</h3>
+          <input
+            id="confirmar"
+            class="Entradas"
+            type="password"
+            placeholder="confirme sua senha aqui"
+            required
+          />
+          <button class="btnRegistrar" onclick="registrar()">Registrar</button>
+          <a class="EntrarRgs" href="Login.html">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="enviar.js"></script>
+</html>
