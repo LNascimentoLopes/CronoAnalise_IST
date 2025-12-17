@@ -68,4 +68,4 @@ app.get("/verify", (req, res) => {
     });
 });
 
-app.listen(16908, () => console.log("Servidor rodando na porta 16908"));
+app.listen(3001, () => console.log("Servidor rodando na porta 3001"));
